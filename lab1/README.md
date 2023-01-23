@@ -13,16 +13,22 @@ Answer:
 	There are many possible ways to write a mySort() function with the given parameters.
 	
 1st Possible way:
+
 	- We take an array of integers in data, then we can set a for loop
 	initializing the counter variable as the first integer and let it 
 	loop until the last index integers while sorting and then
 	print the data values in those index.
+	
 	Ex:
+	
 		for (int counter = first; first <= last; counter++){
+		
 			printf("Data: " + data[counter]);
 		}
 
+
 2nd Possible way:
+
 	- We take an array of integers from data, then we can loop through 
 	all the data element(if we want to find a specific element) and then
 	set that specific index as our first index, then do for-loop until
@@ -30,6 +36,7 @@ Answer:
 	the last of the for-loop.
 
 3rd Possible way:
+
 	- we can use a parameter of length which is the number of element of
 	the data arraylist in order to betterSort the function. Then we can 
 	call the betterSort function and give the data as an input parameter
