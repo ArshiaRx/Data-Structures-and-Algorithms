@@ -1,0 +1,45 @@
+2> this is used for Stderr
+> is used for the StdOut
+
+
+To check the number of file do the following commands:
+wc -l filename
+
+
+towers    nDisks   From    Dest
+
+towers     10       2       3
+
+//Moves 10 disks from 2nd plate to 3rd plate
+
+
+towers(10, 2, 3)
+
+
+Should check if the tower is either 1, 2 or 3. it can not be less than 1, greater than 3
+or the same, 
+two argument should be invalid, greater than 3 also has to be invalid
+it should give an error
+
+if everything works used the exit(0)
+
+- should modify towersMain.c
+
+
+if the there is a error,  it should be outputted into stderr not the stdOut
+
+
+instead VNCONNECT
+
+connect to ssh through pascal
+follow the email that been send two days ago
+server names:
+	- scott,  
+	- 
+
+
+DEADLINE CHANGED 24hr before the lab - wednesday 11:59 pm
+Have to be present in class for the DEMO
+
+
+
