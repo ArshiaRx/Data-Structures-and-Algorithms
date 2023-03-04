@@ -11,7 +11,7 @@
 #define MAX_SIZE_N_TO_SORT 100000
 
 /* prototype for "sort" function */
-void mySort(int data[], unsigned int first, unsigned int last);
+void mySort(int data[], int unsigned first, int unsigned last);
 
 //if not work
 #endif /* #ifndef MYSORT_H */

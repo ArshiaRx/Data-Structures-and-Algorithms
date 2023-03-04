@@ -1,42 +1,34 @@
-/*
-Ex/
-int myCompare(int a, int b)
+Arshia Rahim - 500994106
 
-if a > b --> return 
-	> 0
+InsertionSort
+------------------------------------------------------------
+./insertionSort 
 
-if b < a --> return
-	< 0
+	-	Fully functional, when prompted ./insertionSort < data.txt runs and works completely using metrics header and sort the numbers and output them in ascending order. UserInput also outputs in asending order.
 
-if a==b --> return 
-	== 0
+	Analysis:
 
-d[i] = temp
-myCopy(temp, d[i])
+							Comparison     Swaps      Copys
+	BestCase     ~ O(n),    	n,         0 swaps,    1 copys
+	Average Case ~ O(n^2),      n(n-1)/2,  n(n-1)/2,   (n-1)
+	Worst Case   ~ O(n^2),      n(n-1)/2,  n(n-1)/2,   (n-1)
 
-if (d[i] > temp)
-if (myCompare(d[i], temp) > 0)
-	f  myCopt(int a, int b)
-		{
-			b = a
-		}
-
-passing a value by reference or value
-by refrence take &sign before int variable 
-while value takes juts the int variable (No & sign)
+	Procedure of insertionSort:
+		- Start at index 1, check if the value on the left is greater than current index
+		  if yes, swap the value else keep and check the next index.
 
 
-testSort > stdoutOUT,txt
-testSort 2> stderrOut.txt
+MergeSort
+------------------------------------------------------------
+./mergeSort
 
-for insetrion need 9 varible
-as a function of n
+	-	Fully functional, when ./mergeSort < data.txt runs and work completelly and runs the 
+	    numbers in ascendion order as well as userInput it runs perfectly fine.
 
-n -
-n + 
-n 
+							       Comparison     Swaps      Copys
+	BestCase     ~ O(nlogn),
+	Average Case ~ O(nlogn),
+	Worst Case   ~ O(nlogn),      (nlogn - n+1)
 
-3 best case/ 3 worst/ 3 and average
-
-just change mergeSort and InsersionSort Cfile (This is a two week lab
-*/
+	Procedure of mergeSort:
+		- Divide and conqure the array into small pieces and then compares the value and set them in right place in array in ascending order. 
