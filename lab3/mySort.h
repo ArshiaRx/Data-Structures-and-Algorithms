@@ -12,4 +12,6 @@
 
 /* prototype for "sort" function */
 void mySort(int data[], unsigned int first, unsigned int last);
+
+//if not work
 #endif /* #ifndef MYSORT_H */
