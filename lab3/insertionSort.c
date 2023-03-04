@@ -7,16 +7,20 @@
 //        and set them in an ascending order
 
 void mySort(int array[], unsigned int first, unsigned int last){
-    int key, j;
+    int key;
 
-    for (int i = 1; i <= last; i++){
-        myCopy(&array[i], &key);     //copy value of array[i] to key
-        j = i - 1;
+    for (int j = first+1; j <= last; j++){
+        //key = array[j];
+        myCopy(&array[j], &key);     //copy value of array[i] to key
+        int i = j - 1;
 
-        while(j >= 0 && myCompare(array[j], key) >= 0){
-            mySwap(&array[j], &array[j + 1]);
-            j--;
+        while(i >= 0 && array[i] > key){
+        //myCompare(array[j], key) >= 0)
+            //array[i + 1] = array[i];
+            mySwap(&array[i], &array[i + 1]);
+            i--; // i = i-1;
         }
+        array[i + 1] = key;
     }
 }
     /*{
