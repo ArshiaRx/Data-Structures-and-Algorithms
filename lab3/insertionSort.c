@@ -7,9 +7,9 @@
 //        and set them in an ascending order
 
 void mySort(int array[], unsigned int first, unsigned int last){
-    int i, key, j;
+    int key, j;
 
-    for (i = 1; i <= last; i++){
+    for (int i = 1; i <= last; i++){
         myCopy(&array[i], &key);     //copy value of array[i] to key
         j = i - 1;
 
