@@ -3,6 +3,9 @@
  *  of integers.
  */
 
+//
+
+int HeapSize;
 
 /**
  * heapDelete() removes the biggest integer in the heap and returns it.
@@ -11,7 +14,20 @@
 
 int heapDelete()
 {
-  return 0;  //A dummy return statement
+  int biggestInt;
+   int A[HeapSize];
+
+  //Number of value in heap
+  for (int i = 0; i <= HeapSize; i++){
+    if (A[i+1] > A[i]){
+    biggestInt = A[i+1];
+    }
+    else {
+      biggestInt = A[i];
+    }
+  }
+  
+  return biggestInt;  //A dummy return statement
 }
 
 /**
