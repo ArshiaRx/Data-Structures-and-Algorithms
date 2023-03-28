@@ -25,8 +25,8 @@
 //
 //  RECOMMENDATION:
 //   Uncomment the following 2 lines and use these static globals!
-//static int top = 0;
-//static char * stack[100];
+static int top = 0;
+static char * stack[100];
 
 /**
  * pop() removes the top string on the stack and returns it.
