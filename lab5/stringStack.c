@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  *  The functions in this module implement a Stack data structure
  *  of char pointers (aka "strings").
@@ -37,7 +40,15 @@ static char * stack[100];
 
 char *  pop()
 {
-  return (char *) 0;  //A dummy return statement
+  char * err = NULL;
+  if (top == -1){ 
+    fprintf(stderr, "Error, Stack is empty!\nStack underflow!");
+  }
+  else {
+    err = stack[top];
+    top--;
+  }
+  return err;     //if Null returned then there was an error
 }
 
 /**
@@ -48,6 +59,13 @@ char *  pop()
  */
 void push(char * thing2push)
 {
+  if (top == sizeof(stack)-1){
+    fprintf(stderr, "Error, Stack is full!\nStack underflow!");
+  }
+  else {
+    top++;
+    stack[top] = thing2push;
+  }
 }
 
 /**
@@ -57,5 +75,10 @@ void push(char * thing2push)
  */
 int isEmpty()
 {
-  return 0;  //A dummy return statement
+  if (top == -1){
+    return 1;
+  }
+  else {
+    return 0;  //A dummy return statement
+  }
 }

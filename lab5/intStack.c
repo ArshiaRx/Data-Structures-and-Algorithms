@@ -11,9 +11,6 @@
  *  the Stack at any given time.
  */
 
-struct Stack  {
-
-};
 
 // Implementation hints:
 //   The 3 functions--push, pop and isEmpty--share information
@@ -36,7 +33,6 @@ struct Stack  {
 static int top = 0;
 static int stack[100];
 
-
 /**
  * pop() removes the top integer on the stack and returns it.
  *
@@ -46,13 +42,15 @@ static int stack[100];
 
 int pop()
 {
+  int x = -1;
   if (top == -1){
-    fprintf(stderr, "Error, Stack is empty!\nPop can not happen.");
+    fprintf(stderr, "Error, Stack is empty!\nStack Underflow!");
   }
   else {
+    x = stack[top];
     top--;
   }
-  return stack[top];  //A dummy return statement
+  return x;     //if -1 is returned it means stack is empty
 }
 
 /**
@@ -64,11 +62,11 @@ int pop()
 void push(int thing2push)
 {
   if (top == sizeof(stack)-1){      //Checks if the stack is full
-    printf(stderr, "Error, Stack Overflow!");
+    fprintf(stderr, "Error, Stack is full!\nStack Overflow!");
   }
   else {                            //add the integer to the stack if not full
+    stack[top] = thing2push;
     top++;
-    stack[top] += thing2push;
   }
 }
 

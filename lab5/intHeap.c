@@ -2,10 +2,11 @@
  *  The functions in this module implement a Heapdata structure
  *  of integers.
  */
-
 //
 
-int HeapSize;
+static int position = 0;
+static int Heap[100];
+int HeapSize = sizeof(Heap);
 
 /**
  * heapDelete() removes the biggest integer in the heap and returns it.
@@ -14,21 +15,33 @@ int HeapSize;
 
 int heapDelete()
 {
-  int biggestInt;
-   int A[HeapSize];
-
-  //Number of value in heap
-  for (int i = 0; i <= HeapSize; i++){
-    if (A[i+1] > A[i]){
-    biggestInt = A[i+1];
-    }
-    else {
-      biggestInt = A[i];
-    }
-  }
+  int val = Heap[1];         //Heap
+  int x = Heap[HeapSize];    //last element in tree 'leaf'
   
-  return biggestInt;  //A dummy return statement
-}
+  Heap[1] = Heap[HeapSize];    //Replace last element with Heap
+  Heap[HeapSize] = val;        //Heap element with last element 'leaf'
+  
+  int i = 1;
+  int j = 2 * i;
+
+  int temp;
+  
+  while (j <= HeapSize-1){
+    if (j < HeapSize-1 && Heap[j + 1] > Heap[j])
+      j = j + 1;
+    
+    if (Heap[i] < Heap[j]){
+      temp = Heap[i];
+      Heap[i] = Heap[j];
+      Heap[j] = temp;
+      i = j;
+      j = 2 * j;
+    }else 
+        break;
+    }
+    return val;
+  }
+        //A dummy return statement
 
 /**
  *  addHeap(thing2add) adds the "thing2add" to the Heap.
@@ -36,6 +49,8 @@ int heapDelete()
  */
 void addHeap(int thing2add)
 {
+  Heap[position] = thing2add;
+  position++;
 }
 
 /**
@@ -44,5 +59,5 @@ void addHeap(int thing2add)
  */
 int heapSize()
 {
-  return 0;  //A dummy return statement
+  return sizeof(Heap);  //A dummy return statement
 }
