@@ -1,6 +1,6 @@
 # Data Structure and Algorithms - COE428
 
-This course Engineering Algorithms & Data Structures (COE 428) deals with the fundamental means to approach the design and analysis of algorithms in an effective and methodologically correct manner. The labs are performed in C programming Language. This course is taken at TMU, formally known for Ryerson. (COE628)
+This course Engineering Algorithms & Data Structures deals with the fundamental means to approach the design and analysis of algorithms in an effective and methodologically correct manner. The labs are performed in C programming Language. This course is taken at TMU, formally known for Ryerson. (COE428)
 
 Course Website: https://www.ecb.torontomu.ca/~courses/coe428/index.html
 
