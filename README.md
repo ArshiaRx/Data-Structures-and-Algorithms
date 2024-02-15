@@ -1,5 +1,4 @@
-# COE428
-COE428 - Data Structure and Algorithms
+# Data Structure and Algorithms - COE428
 https://www.ecb.torontomu.ca/~courses/coe428/index.html
 
 Labs
