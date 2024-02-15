@@ -4,7 +4,7 @@ This course Engineering Algorithms & Data Structures deals with the fundamental 
 
 Course Website: https://www.ecb.torontomu.ca/~courses/coe428/index.html
 
-##### You may refer to my contents, but COPYING them is strictly prohibited, as it would violate policy 60.
+### You may refer to my contents, but COPYING them is strictly prohibited, as it would violate policy 60.
 
 -> W2023
 
